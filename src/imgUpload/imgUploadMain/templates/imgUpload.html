@@ -1,0 +1,12 @@
+<html lang="ch">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="/uploadImg/" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <input type="file" name="img">
+            <input type="submit" value="上传">
+        </form>
+    </body>
+</html>
